@@ -19,19 +19,29 @@
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
     <br>
-    <div id="game">
-        <div id="objective">
-            <h3>Goal: <div id="goal"></div></h3>
-            <div id="running-score">
-                <p>Wins: <div id="wins"></div></p>
-                <p>Losses: <div id="losses"></div></p>
+    <div id="game container">
+        <div class="objective row">
+            <div class="col-lg-4">
+                <h3>Goal: <div id="goal"></div></h3>
+            </div>
+            <div class="col-lg-4">
+                <div id="running-score">
+                    <p>Wins: <div id="wins"></div></p>
+                    <p>Losses: <div id="losses"></div></p>
+                </div>
             </div>
         </div>
-        <div id="crystal-buttons">
-            <button id="ruby"><img src="assets/images/ruby.png" alt="ruby" height="100px"></button>
-            <button id="diamond"><img src="assets/images/diamond.png" alt="diamond" height="100px"></button>
-            <button id="opal"><img src="assets/images/opal.png" alt="opal" height="100px"></button>
-            <button id="emerald"><img src="assets/images/Emerald_Logo.png" alt="emerald" height="100px"></button>
+        <div class="crystal-buttons row">
+            <button id="ruby" class="col-lg-2"><img src="assets/images/ruby.png" alt="ruby" height="100px"></button>
+            <button id="diamond" class="col-lg-2"><img src="assets/images/diamond.png" alt="diamond" height="100px"></button>
+            <button id="opal" class="col-lg-2"><img src="assets/images/opal.png" alt="opal" height="100px"></button>
+            <button id="emerald" class="col-lg-2"><img src="assets/images/Emerald_Logo.png" alt="emerald" height="100px"></button>
+        </div>
+        <div class="crystal-values row">
+            <div class="col-lg-2">Ruby Value: <div id="ruby-value"></div></div>
+            <div class="col-lg-2">Diamond Value: <div id="diamond-value"></div></div>
+            <div class="col-lg-2">Opal Value: <div id="opal-value"></div></div>
+            <div class="col-lg-2">Emerald Value: <div id="emerald-value"></div></div>
         </div>
         <div id="score-display">
             <h3>Your total score is:</h3>

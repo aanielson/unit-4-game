@@ -29,45 +29,58 @@ document.getElementById("goal").innerHTML = goalNumber;
 $("#ruby").click( function() {
     score = score+ruby;
     document.getElementById("score").innerHTML = score;
-    console.log(score);
+    document.getElementById("ruby-value").innerHTML = ruby;
+    scoreChecker();
 });
 $("#diamond").click( function() {
     score = score+diamond;
     document.getElementById("score").innerHTML = score;
-    console.log(score);
+    document.getElementById("diamond-value").innerHTML = diamond;
+    scoreChecker();
 });
 $("#opal").click( function() {
     score = score+opal;
     document.getElementById("score").innerHTML = score;
-    console.log(score);
+    document.getElementById("opal-value").innerHTML = opal;
+    scoreChecker();
 });
 $("#emerald").click( function() {
     score = score+emerald;
     document.getElementById("score").innerHTML = score;
-    console.log(score);
+    document.getElementById("emerald-value").innerHTML = emerald;
+    scoreChecker();
 });
 //if the score matches the beginning random number, increase wins id/var
     //reset and randomize goal & crystal numbers
-if (score === goalNumber) {
-    reset();
-    wins++;
-    document.getElementById("wins").innerHTML = wins;
-}
-//if the score goes over the beginning random number, increase losses id/var
-    //reset and randomize goal & crystal numbers
-if (score >= goalNumber) {
-    reset();
-    losses++;
-    document.getElementById("losses").innerHTML = losses;
+function scoreChecker() {
+    if (score === goalNumber) {
+        reset();
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+    } else if (score >= goalNumber) {
+    //if the score goes over the beginning random number, increase losses id/var
+        //reset and randomize goal & crystal numbers
+        reset();
+        losses++;
+        document.getElementById("losses").innerHTML = losses;
+    }
 }
 //reset function
 function reset() {
     goalNumber = Math.floor((Math.random() * 101) + 19);
     document.getElementById("goal").innerHTML = goalNumber;
+
     ruby = Math.floor(Math.random() * 13);
     diamond = Math.floor(Math.random() * 13);
     opal = Math.floor(Math.random() * 13);
     emerald = Math.floor(Math.random() * 13);
+    score = 0;
+    
+    document.getElementById("ruby-value").innerHTML = "";
+    document.getElementById("diamond-value").innerHTML = "";
+    document.getElementById("opal-value").innerHTML = "";
+    document.getElementById("emerald-value").innerHTML = "";
+    document.getElementById("score").innerHTML = score;
 }
 
 
