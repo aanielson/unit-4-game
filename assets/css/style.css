@@ -1,10 +1,10 @@
 body {
-    background-image: url("../images/halftone-yellow.png");
-    background-repeat: repeat;
+    background-color: #D6a3DC;
 }
 h1 {
     font-family: 'Spicy Rice', cursive;
     font-size: 95px;
+    color: #F7DB70;
 }
 h3 {
     font-family: 'Spicy Rice', cursive;
@@ -14,18 +14,21 @@ h3 {
     display: block;
     margin: auto;
     width: 960px;
-    background-color: lavenderblush;
-    margin-top: 20px;
+    background-color:#75CCEB;
+    margin-top: 50px;
     padding: 30px
 }
 .game {
     display: block;
     width: 960px;
     margin: auto;
-    background-color: lavender;
-    min-height: 350px;
+    background-color: #75CCEB;
+    /* background-color: #EABEBF;; */
+    /* background-color: #A5DEE5; */
+    min-height: 300px;
     padding: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-family: 'Spicy Rice', cursive;
 }
 #score-display {
     padding-top: 10px;
