@@ -1,6 +1,6 @@
 # Crystal Collector Game
 
-## Instructions
+## Description
 This is a guessing game. The player must guess numbers rather than letters.
 1. There will be four crystals displayed as buttons on the page.
 2. The player will be shown a random number at the start of the game.
